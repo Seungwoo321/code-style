@@ -1,16 +1,16 @@
 # @seungwoo321/prettier-config
 
-스탠다드 기반으로 개인 스타일에 맞게 prettier 설정을 커스텀하여 제공합니다.
+Standard 스타일을 기반으로, 개인 취향에 맞게 커스터마이징한 Prettier 설정입니다.
 
-## 설치 방법
+## 설치
 
 ```bash
 npm install @seungwoo321/prettier-config -D
 ```
 
-## 사용 방법
+## 사용법
 
-.prettierrc.js 파일을 생성하고 `@seungwoo321/prettier-config` 패키지를 추가합니다.
+.prettierrc.js 파일을 생성하고 아래와 같이 설정합니다:
 
 ```js
 import prettierConfig from '@seungwoo321/prettier-config'
@@ -25,19 +25,17 @@ const config = {
 export default config
 ```
 
-또는
-
-package.json 파일에 키를 추가합니다.
+또는, package.json에 직접 추가할 수도 있습니다:
 
 ```json
 "prettier": "@seungwoo321/prettier-config"
 ```
 
-## Integrating with IDE
+## IDE 연동 (VSCode)
 
-- 이 패키지는 Formatting을 위해 Prettier를 사용합니다.
-- Code-quality를 위해 ESLint (`@seungwoo321/eslint-plugin-standard-lite-*`) 패키지와 함께 사용합니다. 
-- IDE에서 autofix 하기 위해 아래 설정이 필요합니다.
+Prettier를 자동 포맷터로 사용하려면 아래와 같이 설정하세요:
+
+.vscode/settings.json:
 
 ```json
 {
@@ -46,3 +44,5 @@ package.json 파일에 키를 추가합니다.
   "prettier.singleAttributePerLine": true
 }
 ```
+
+💡 코드 품질 유지를 위해 @seungwoo321/eslint-plugin-standard-lite-* 와 함께 사용하는 것을 권장합니다.

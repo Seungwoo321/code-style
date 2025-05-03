@@ -18,7 +18,7 @@ Code-quality를 위해 ESLint를 사용하고 Formatting을 위해 Prettier를 �
 - [@seungwoo321/eslint-plugin-standard-lite-js](/packages/eslint-plugin-standard-lite-js/): ESLint 9.x용 Standard 규칙
 - [@seungwoo321/eslint-plugin-standard-lite-jsx](/packages/eslint-plugin-standard-lite-jsx/): ESLint 9.x용 Standard JSX 규칙
 - [@seungwoo321/eslint-plugin-standard-lite-ts](/packages/eslint-plugin-standard-lite-ts/): ESLint 9.x용 Standard TS 규칙
-- [@seungwoo321/prettier-config](/packages/eslint-plugin-prettier/): Prettier 포맷터
+- [@seungwoo321/prettier-config](/packages/prettier-config/): Prettier 포맷터
 
 
 <!-- 
