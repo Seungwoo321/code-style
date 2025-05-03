@@ -1,5 +1,5 @@
 {
-  "name": "@seungwoo321/eslint-plugin-standard",
+  "name": "@seungwoo321/eslint-plugin-standard-js",
   "version": "1.0.0",
   "type": "module",
   "publishConfig": {
@@ -17,7 +17,7 @@
     "lib"
   ],
   "scripts": {
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --scope eslint-plugin-standard",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --scope eslint-plugin-standard-js",
     "clean": "rimraf lib",
     "build": "pnpm clean && tsc",
     "lint": "eslint ."
