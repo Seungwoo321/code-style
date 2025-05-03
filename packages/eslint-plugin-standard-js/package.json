@@ -1,0 +1,46 @@
+{
+  "name": "@seungwoo321/eslint-plugin-standard",
+  "version": "1.0.0",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "engines": {
+    "node": ">=18.20.8"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "lib"
+  ],
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --scope eslint-plugin-standard",
+    "clean": "rimraf lib",
+    "build": "pnpm clean && tsc",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "Seungwoo, Lee <seungwoo321@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/utils": "^8.31.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^17.17.0",
+    "eslint-plugin-promise": "^7.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "conventional-changelog": "^6.0.0",
+    "conventional-changelog-cli": "^5.0.0",
+    "eslint": "^9.25.0",
+    "rimraf": "^6.0.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  }
+}
