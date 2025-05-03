@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["node_modules/@types", "types"],
+    "target": "esnext",
+    "module": "NodeNext",
+    "lib": ["es2015", "esnext", "dom"],
+    "moduleResolution": "NodeNext",
+    "skipLibCheck": true,
+    "declaration": true,
+    "outDir": "lib",
+    "esModuleInterop": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmitOnError": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "lib", "eslint.config.js"]
+}
