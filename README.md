@@ -9,9 +9,9 @@
 
 ### 포함된 패키지
 
-- [@seungwoo321/eslint-plugin-standard-js](/packages/eslint-plugin-standard-js/): ESLint 9.x용 Standard 규칙 패키지입니다.
-- [@seungwoo321/eslint-plugin-standard-ts](/packages/eslint-plugin-standard-ts/): ESLint 9.x용 Standard TS 규칙 패키지입니다.
-- [@seungwoo321/eslint-plugin-standard-jsx](/packages/eslint-plugin-standard-jsx/): ESLint 9.x용 Standard JSX 규칙 패키지입니다.
+- [@seungwoo321/eslint-plugin-standard-js](/packages/eslint-plugin-standard-js/): ESLint 9.x용 Standard 규칙
+- [@seungwoo321/eslint-plugin-standard-ts](/packages/eslint-plugin-standard-ts/): ESLint 9.x용 Standard TS 규칙
+- [@seungwoo321/eslint-plugin-standard-jsx](/packages/eslint-plugin-standard-jsx/): ESLint 9.x용 Standard JSX 규칙
 
 ### IDE 연동 (VSCode)
 
@@ -83,10 +83,10 @@ Prettier를 메인 포맷터로 사용하며,
 
 ### 포함된 패키지
 
-- [@seungwoo321/eslint-plugin-standard-lite-js](/packages/eslint-plugin-standard-lite-js/): 코드 스타일 관련 룰을 제외한 ESLint 9.x용 Standard 규칙 패키지입니다.
-- [@seungwoo321/eslint-plugin-standard-lite-jsx](/packages/eslint-plugin-standard-lite-jsx/): 코드 스타일 관련 룰을 제외한 ESLint 9.x용 Standard JSX 규칙 패키지입니다.
-- [@seungwoo321/eslint-plugin-standard-lite-ts](/packages/eslint-plugin-standard-lite-ts/): 코드 스타일 관련 룰을 제외한 ESLint 9.x용 Standard TS 규칙 패키지입니다.
-- [@seungwoo321/eslint-plugin-prettier](/packages/eslint-plugin-prettier/): Prettier 기반 포맷팅을 제공합니다.
+- [@seungwoo321/eslint-plugin-standard-lite-js](/packages/eslint-plugin-standard-lite-js/): 코드 스타일 관련 룰을 제외한 ESLint 9.x용 Standard 규칙
+- [@seungwoo321/eslint-plugin-standard-lite-jsx](/packages/eslint-plugin-standard-lite-jsx/): 코드 스타일 관련 룰을 제외한 ESLint 9.x용 Standard JSX 규칙
+- [@seungwoo321/eslint-plugin-standard-lite-ts](/packages/eslint-plugin-standard-lite-ts/): 코드 스타일 관련 룰을 제외한 ESLint 9.x용 Standard TS 규칙
+- [@seungwoo321/eslint-plugin-prettier](/packages/eslint-plugin-prettier/): Prettier 기반 포맷팅을 제공
 
 
 ### IDE 연동 (VSCode)
