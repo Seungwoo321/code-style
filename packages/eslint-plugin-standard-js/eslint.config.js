@@ -1,5 +1,5 @@
-import standard from './lib/index.js'
 import { defineConfig } from 'eslint/config'
+import standard from './lib/index.js'
 import tseslint from 'typescript-eslint'
 
 export default defineConfig([
