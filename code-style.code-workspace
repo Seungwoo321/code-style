@@ -1,0 +1,28 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "packages/eslint-plugin-standard-js"
+    },
+    {
+      "path": "packages/eslint-plugin-standard-jsx"
+    },
+    {
+      "path": "packages/eslint-plugin-standard-lite-js"
+    },
+    {
+      "path": "packages/eslint-plugin-standard-lite-jsx"
+    },
+    {
+      "path": "packages/eslint-plugin-standard-ts"
+    },
+    {
+      "path": "packages/eslint-plugin-standard-lite-ts"
+    },
+    {
+      "path": "packages/prettier-config"
+    }
+  ]
+}
