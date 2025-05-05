@@ -5,14 +5,15 @@
     ["@semantic-release/commit-analyzer", {
       "preset": "angular",
       "releaseRules": [
-        {"type": "feat", "scope": "@seungwoo321/eslint-plugin-standard-jsx", "release": "minor"},
-        {"type": "fix", "scope": "@seungwoo321/eslint-plugin-standard-jsx", "release": "patch"}
+        {"type": "feat", "scope": "eslint-plugin-standard-jsx", "release": "minor"},
+        {"type": "fix", "scope": "eslint-plugin-standard-jsx", "release": "patch"},
+        {"release": false}
       ]
     }],
     ["@semantic-release/release-notes-generator", {
       "preset": "angular",
       "parserOpts": {
-        "headerPattern": "^(\\w*)(?:\\((@seungwoo321/eslint-plugin-standard-jsx)\\))?: (.*)$"
+        "headerPattern": "^(\\w*)(?:\\((eslint-plugin-standard-jsx)\\))?: (.*)$"
       }
     }],
     ["@semantic-release/changelog", {
