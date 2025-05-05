@@ -36,11 +36,12 @@
   "description": "eslint for standard jsx",
   "dependencies": {
     "@stylistic/eslint-plugin-jsx": "^4.2.0",
-    "@typescript-eslint/utils": "^8.31.1"
+    "@typescript-eslint/utils": "^8.31.1",
+    "eslint-plugin-react": "^7.37.5"
   },
   "devDependencies": {
-    "@types/node": "^22.15.3",
     "@seungwoo321/eslint-plugin-standard-js": "workspace:*",
+    "@types/node": "^22.15.3",
     "conventional-changelog": "^6.0.0",
     "conventional-changelog-cli": "^5.0.0",
     "eslint": "^9.25.0",
