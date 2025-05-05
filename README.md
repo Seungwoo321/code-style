@@ -5,15 +5,18 @@
 
 ## Stylistic 기반 포맷터와 ESLint 사용하기
 
-각 플러그인은 `base`, `stylistic`와 두개를 모두 포함하는 `recommended`를 제공합니다
-
 > recommended: 코드 품질 규칙과 @stylistic/eslint-plugin 기반 포맷팅 규칙 모두 포함  
-> base: 코드 품질 규칙만 포함 (Prettier와 함께 사용 시 적합)
+> base: 코드 품질 규칙만 포함 (Prettier와 함께 사용 시 적합)  
 > stylistic: @stylistic/eslint-plugin 기반 포맷팅 규칙만 포함
+
+eslint 플러그인은 `base`, `stylistic`와 두개를 모두 포함하는 `recommended`를 제공합니다
 
 - [@seungwoo321/eslint-plugin-standard-js](/packages/eslint-plugin-standard-js/): ESLint 9.x용 Standard JS 규칙을 제공합니다.
 - [@seungwoo321/eslint-plugin-standard-jsx](/packages/eslint-plugin-standard-jsx/): ESLint 9.x용 Standard JSX 규칙을 제공합니다.
-- [@seungwoo321/prettier-config](/packages/prettier-config/): Prettier 포맷터를 제공합니다.
+- [@seungwoo321/prettier-config](/packages/prettier-config/): prettier 포맷터를 제공합니다.
+
+
+
 
 <!-- 
 ## 템플릿
