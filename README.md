@@ -19,10 +19,13 @@ eslint 플러그인은 `base`, `stylistic`와 두개를 모두 포함하는 `rec
 
 > ✅ TypeScript ESLint는 [공식 문서](https://typescript-eslint.io/users/configs)를 참고하세요.
 
+사용 예시:
+
 ```js
 // eslint.config.js
 import { defineConfig } from 'eslint/config'
-import standard from '@seungwoo321/eslint-plugin-standard-js'
+import standardJs from '@seungwoo321/eslint-plugin-standard-js'
+import standardJsx from '@seungwoo321/eslint-plugin-standard-jsx'
 import tseslint from 'typescript-eslint'
 
 export default defineConfig([
@@ -31,7 +34,8 @@ export default defineConfig([
     extends: [
       ...tseslint.configs.strict,
       ...tseslint.configs.stylistic,
-      ...standard.configs.recommended
+      ...standardJs.configs.recommended,
+      ...standardJsx.configs.recommended
     ]
   }
 ])
