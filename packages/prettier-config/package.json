@@ -10,7 +10,7 @@
     "node": ">=18.20.8"
   },
   "scripts": {
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --scope eslint-plugin-standard-js"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --scope prettier-config --first-release"
   },
   "keywords": [
     "prettier",
@@ -20,6 +20,8 @@
   "license": "MIT",
   "description": "prettier config",
   "devDependencies": {
+    "conventional-changelog": "^6.0.0",
+    "conventional-changelog-cli": "^5.0.0",
     "prettier": "^3.5.3"
   },
   "peerDependencies": {
