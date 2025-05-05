@@ -12,7 +12,6 @@
 > stylistic: @stylistic/eslint-plugin 기반 포맷팅 규칙만 포함
 
 - [@seungwoo321/eslint-plugin-standard-js](/packages/eslint-plugin-standard-js/): ESLint 9.x용 Standard JS 규칙을 제공합니다.
-- [@seungwoo321/eslint-plugin-standard-ts](/packages/eslint-plugin-standard-ts/): ESLint 9.x용 Standard TS 규칙을 제공합니다.
 - [@seungwoo321/eslint-plugin-standard-jsx](/packages/eslint-plugin-standard-jsx/): ESLint 9.x용 Standard JSX 규칙을 제공합니다.
 - [@seungwoo321/prettier-config](/packages/prettier-config/): Prettier 포맷터를 제공합니다.
 

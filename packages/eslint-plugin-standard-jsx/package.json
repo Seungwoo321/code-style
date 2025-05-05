@@ -33,7 +33,6 @@
   "devDependencies": {
     "@types/node": "^22.15.3",
     "@seungwoo321/eslint-plugin-standard-js": "workspace:*",
-    "@seungwoo321/eslint-plugin-standard-ts": "workspace:*",
     "conventional-changelog": "^6.0.0",
     "conventional-changelog-cli": "^5.0.0",
     "eslint": "^9.25.0",
