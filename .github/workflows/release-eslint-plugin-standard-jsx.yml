@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-    # paths:
-    #   - 'packages/eslint-plugin-standard-jsx/**'
+    paths:
+      - 'packages/eslint-plugin-standard-jsx/**'
 
 jobs:
   release:
