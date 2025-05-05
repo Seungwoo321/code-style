@@ -3,18 +3,39 @@
 이 레포지토리는 일관된 코드 스타일 유지를 위해 만들어졌습니다.
 [@naverpay/code-style](https://github.com/NaverPayDev/code-style/)에서 영감을 받았으며, 해당 레포처럼 모노레포 구조로 여러 패키지를 포함하고 있습니다.
 
-## Stylistic 기반 포맷터와 ESLint 사용하기
-
-> recommended: 코드 품질 규칙과 @stylistic/eslint-plugin 기반 포맷팅 규칙 모두 포함  
-> base: 코드 품질 규칙만 포함 (Prettier와 함께 사용 시 적합)  
-> stylistic: @stylistic/eslint-plugin 기반 포맷팅 규칙만 포함
+## 패키지
 
 eslint 플러그인은 `base`, `stylistic`와 두개를 모두 포함하는 `recommended`를 제공합니다
+
+> ✅ recommended: 코드 품질 규칙과 @stylistic/eslint-plugin 기반 포맷팅 규칙 모두 포함  
+> ✅ base: 코드 품질 규칙만 포함 (Prettier와 함께 사용 시 적합)  
+> ✅ stylistic: @stylistic/eslint-plugin 기반 포맷팅 규칙만 포함
 
 - [@seungwoo321/eslint-plugin-standard-js](/packages/eslint-plugin-standard-js/): ESLint 9.x용 Standard JS 규칙을 제공합니다.
 - [@seungwoo321/eslint-plugin-standard-jsx](/packages/eslint-plugin-standard-jsx/): ESLint 9.x용 Standard JSX 규칙을 제공합니다.
 - [@seungwoo321/prettier-config](/packages/prettier-config/): prettier 포맷터를 제공합니다.
 
+## 타입스크립트와 함께 사용하기
+
+> ✅ TypeScript ESLint는 [공식 문서](https://typescript-eslint.io/users/configs)를 참고하세요.
+
+```js
+// eslint.config.js
+import { defineConfig } from 'eslint/config'
+import standard from '@seungwoo321/eslint-plugin-standard-js'
+import tseslint from 'typescript-eslint'
+
+export default defineConfig([
+  {
+    files: ['**/*.{js,mjs,cjs,ts,mts,jsx,tsx}'],
+    extends: [
+      ...tseslint.configs.strict,
+      ...tseslint.configs.stylistic,
+      ...standard.configs.recommended
+    ]
+  }
+])
+```
 
 
 

@@ -29,27 +29,6 @@ export default defineConfig([
 ])
 ```
 
-> ✅ 타입스크립트와 함께 사용하려면 다음과 같은 방식이 유용합니다.
-> ✨ [link](https://typescript-eslint.io/users/configs/)
-
-```js
-// eslint.config.js
-import { defineConfig } from 'eslint/config'
-import standard from '@seungwoo321/eslint-plugin-standard-js'
-import tseslint from 'typescript-eslint'
-
-export default defineConfig([
-  {
-    files: ['**/*.{js,mjs,cjs,ts,mts,jsx,tsx}'],
-    extends: [
-      ...tseslint.configs.strict,
-      ...tseslint.configs.stylistic,
-      ...standard.configs.recommended
-    ]
-  }
-])
-```
-
 > ✅ 기본 설정을 사용하면서 특정 규칙만 커스터마이즈할 수 있습니다.  
 > ✨ 프로젝트에 맞는 규칙을 세밀하게 조정하고 싶다면 다음 방식이 유용합니다.
 
