@@ -1,10 +1,5 @@
 {
   "editor.tabSize": 2,
-  // "eslint.workingDirectories": [
-  //   {
-  //     "mode": "auto"
-  //   }
-  // ],
   "editor.defaultFormatter": null,
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
@@ -17,34 +12,29 @@
   "eslint.options": {
     "overrideConfigFile": "eslint.config.js"
   },
-  "eslint.probe": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "[javascriptreact]": {
-    "editor.defaultFormatter": null
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": null
-  },
-  "editor.formatOnPaste": false,
-  "prettier.singleAttributePerLine": true,
-  "typescript.tsdk": "./node_modules/typescript/lib",
-  "typescript.tsserver.enableTracing": true,
-  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
-  "files.associations": {
-    "*.json": "jsonc"
-  },
-  "reactSnippets.settings.importReactOnTop": false,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript", 
     "typescriptreact"
   ],
-  "eslint.useFlatConfig": true
+  "eslint.useFlatConfig": true,
+  
+  // TypeScript 관련 설정
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[typescript]": {
+    "editor.defaultFormatter": null
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": null
+  },
+  
+  // 기타 필요한 설정
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  
+  // JavaScript/TypeScript 기본 포맷팅 비활성화 (ESLint가 담당)
+  "javascript.format.enable": false,
+  "typescript.format.enable": false
 }
