@@ -9,14 +9,15 @@
         "releaseRules": [
           {
             "type": "feat",
-            "scope": "@seungwoo321/prettier-config",
+            "scope": "prettier-config",
             "release": "minor"
           },
           {
             "type": "fix",
-            "scope": "@seungwoo321/prettier-config",
+            "scope": "prettier-config",
             "release": "patch"
-          }
+          },
+          { "release": false }
         ]
       }
     ],
@@ -25,7 +26,7 @@
       {
         "preset": "angular",
         "parserOpts": {
-          "headerPattern": "^(\\w*)(?:\\((@seungwoo321/prettier-config)\\))?: (.*)$"
+          "headerPattern": "^(\\w*)(?:\\((prettier-config)\\))?: (.*)$"
         }
       }
     ],
