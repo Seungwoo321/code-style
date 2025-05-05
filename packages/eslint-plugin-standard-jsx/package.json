@@ -17,7 +17,7 @@
     "lib"
   ],
   "scripts": {
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --scope eslint-plugin-standard-jsx",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --scope eslint-plugin-standard-jsx --first-release",
     "clean": "rimraf lib",
     "build": "pnpm clean && tsc",
     "lint": "eslint ."
