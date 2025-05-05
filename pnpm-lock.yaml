@@ -106,6 +106,12 @@ importers:
 
   packages/prettier-config:
     devDependencies:
+      conventional-changelog:
+        specifier: ^6.0.0
+        version: 6.0.0(conventional-commits-filter@5.0.0)
+      conventional-changelog-cli:
+        specifier: ^5.0.0
+        version: 5.0.0(conventional-commits-filter@5.0.0)
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
