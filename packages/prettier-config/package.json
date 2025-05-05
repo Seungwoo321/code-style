@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.20.8"
+  },
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --scope eslint-plugin-standard-js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "author": "Seungwoo, Lee <seungwoo321@gmail.com>",
   "license": "MIT",
-  "description": "",
+  "description": "prettier config",
   "devDependencies": {
     "prettier": "^3.5.3"
   },

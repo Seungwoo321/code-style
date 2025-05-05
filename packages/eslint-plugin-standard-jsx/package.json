@@ -22,10 +22,18 @@
     "build": "pnpm clean && tsc",
     "lint": "eslint ."
   },
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "eslint-plugin-standard",
+    "eslint-plugin-standard-jsx",
+    "standard",
+    "standard-jsx"
+  ],
   "author": "Seungwoo, Lee <seungwoo321@gmail.com>",
   "license": "MIT",
-  "description": "",
+  "description": "eslint for standard jsx",
   "dependencies": {
     "@stylistic/eslint-plugin-jsx": "^4.2.0",
     "@typescript-eslint/utils": "^8.31.1"
