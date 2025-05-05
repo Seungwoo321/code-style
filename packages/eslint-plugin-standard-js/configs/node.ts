@@ -1,8 +1,8 @@
-import pluginNode from 'eslint-plugin-n'
+import n from 'eslint-plugin-n'
 import { TSESLint } from '@typescript-eslint/utils'
 const config: TSESLint.FlatConfig.Config = {
   plugins: {
-    n: pluginNode
+    n
   },
   rules: {
     'n/handle-callback-err': ['error', '^(err|error)$'],

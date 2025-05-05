@@ -1,8 +1,22 @@
 import { TSESLint } from '@typescript-eslint/utils'
+import globals from 'globals'
+
 const config: TSESLint.FlatConfig.Config = {
   languageOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
+
+    parserOptions: {
+      ecmaFeatures: { jsx: true }
+    },
+
+    globals: {
+      ...globals.es2021,
+      ...globals.node,
+      document: 'readonly',
+      navigator: 'readonly',
+      window: 'readonly'
+    }
   },
   rules: {
     'no-var': 'warn',

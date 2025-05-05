@@ -1,8 +1,8 @@
-import pluginPromise from 'eslint-plugin-promise'
+import promise from 'eslint-plugin-promise'
 import { TSESLint } from '@typescript-eslint/utils'
 const config: TSESLint.FlatConfig.Config = {
   plugins: {
-    promise: pluginPromise
+    promise
   },
   rules: {
     'promise/param-names': 'error'

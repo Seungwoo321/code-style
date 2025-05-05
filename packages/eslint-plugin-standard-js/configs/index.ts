@@ -13,4 +13,11 @@ const configArray: TSESLint.FlatConfig.ConfigArray = [
   promiseConfig
 ]
 
-export default configArray
+export {
+  configArray as default,
+  baseConfig,
+  stylisticConfig,
+  importConfig,
+  nodeConfig,
+  promiseConfig
+}
