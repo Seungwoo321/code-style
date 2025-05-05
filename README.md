@@ -47,20 +47,23 @@ export default defineConfig([
 ])
 ```
 
-## 사용 예시
+## 템플릿
 
 코드 스타일을 적용한 개발 템플릿을 별도 레포지토리로 제공합니다.
 
 - [vite-react-ts-standard](https://github.com/Seungwoo321/vite-react-ts-standard): Vite의 react-ts 템플릿 기반으로 Standard 코드 스타일 플러그인(@seungwoo321/code-style)을 적용한 템플릿입니다.
 
-<!-- 
-## 템플릿
+### TODO
 
-코드 스타일을 적용한 개발 템플릿을 별도 레포지토리로 제공합니다 (추후 링크 추가 예정)
-- Vite 템플릿
-- Vite + React 19 + ESLint 9 + Standard rule
-- Vite + Vue2 + ESLint 9 + Standard rule
-- Vite + Vue3 + ESLint 9 + Standard rule
+- [vite-js-standard](https://github.com/Seungwoo321/vite-js-standard)
+- [vite-react-js-standard](https://github.com/Seungwoo321/vite-react-js-standard)
+- [vite-vue2-standard](https://github.com/Seungwoo321/vite-vue2-standard)
+- [vite-vue3-standard](https://github.com/Seungwoo321/vite-vue3-standard)
+- [vite-ts-standard](https://github.com/Seungwoo321/vite-ts-standard)
+- [vite-vue2-ts-standard](https://github.com/Seungwoo321/vite-vue2-ts-standard)
+- [vite-vue3-ts-standard](https://github.com/Seungwoo321/vite-vue3-ts-standard)
+
+<!-- 
 - Next 템플릿
 - Next 15 + ESLint 9 + Standard rule
 - Next 15 + Tailwind 4 + Shadcn/UI + ESLint 9 + Standard rule
