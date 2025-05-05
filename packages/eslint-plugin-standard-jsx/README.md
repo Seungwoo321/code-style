@@ -67,7 +67,7 @@ export default defineConfig([
 
 ## IDE 연동 (VSCode, Cursor)
 
-> prettier를 사용하는 규칙을 사용한다면, 자동 포맷팅을 위해 [@seungwoo321/prettier-config](../prettier-config/README.md)를 참고하세요.  
+> prettier를 사용하는 규칙을 사용한다면, 자동 포맷팅을 위해 [@seungwoo321/prettier-config](../prettier-config/)를 참고하세요.  
 > stylistic가 포함된 규칙을 사용한다면, 자동 포맷팅을 위해 아래 설정을 적용하세요.
 
 ```jsonc
