@@ -5,7 +5,7 @@ ESLint 9.x용 Standard 규칙 기반의 린트 플러그인입니다.
 ## 설치
 
 ```bash
-npm install -D eslint @seungwoo321/eslint-plugin-standard-jsx
+npm install -D eslint @seungwoo321/eslint-plugin-standard-js @seungwoo321/eslint-plugin-standard-jsx
 ```
 
 ## 사용법
@@ -17,17 +17,18 @@ npm install -D eslint @seungwoo321/eslint-plugin-standard-jsx
 ```js
 // eslint.config.js
 import { defineConfig } from 'eslint/config'
-import standard from '@seungwoo321/eslint-plugin-standard-jsx'
+import standardjs from '@seungwoo321/eslint-plugin-standard-js'
+import standardjsx from '@seungwoo321/eslint-plugin-standard-jsx'
 
 export default defineConfig([
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,jsx,tsx}'],
     extends: [
-      ...standard.configs.recommended
+      ...standardjs.configs.recommended,
+      ...standardjsx.configs.recommended
     ]
   }
 ])
-
 ```
 
 > ✅ 기본 설정을 사용하면서 특정 규칙만 커스터마이즈할 수 있습니다.  
@@ -36,7 +37,8 @@ export default defineConfig([
 ```js
 // eslint.config.js
 import { defineConfig } from 'eslint/config'
-import standard from '@seungwoo321/eslint-plugin-standard-jsx'
+import standardjs from '@seungwoo321/eslint-plugin-standard-jsx'
+import standardjsx from '@seungwoo321/eslint-plugin-standard-jsx'
 
 export default defineConfig([
   {
@@ -58,17 +60,22 @@ export default defineConfig([
       // 세미콜론 규칙 비활성화
       '@stylistic/semi': 'off',
       // 미사용 변수는 경고로만 표시
-      'no-unused-vars': 'warn'
+      'no-unused-vars': 'warn',
+      // ✅ 중괄호 내부 공백 허용 안 함
+      'react/jsx-curly-spacing': ['error', { when: 'never', children: true }],
+      // ✅ 등호 주위 공백 없음
+      'react/jsx-equals-spacing': ['error', 'never'],
+      // ✅ 닫는 태그 괄호는 속성 다음 줄에
+      'react/jsx-closing-bracket-location': ['error', 'line-aligned']
     }
   }
 ])
-
 ```
 
 ## IDE 연동 (VSCode, Cursor)
 
-> prettier를 사용하는 규칙을 사용한다면, 자동 포맷팅을 위해 [@seungwoo321/prettier-config](../prettier-config/)를 참고하세요.  
-> stylistic가 포함된 규칙을 사용한다면, 자동 포맷팅을 위해 아래 설정을 적용하세요.
+> ✅ stylistic가 포함된 규칙을 사용한다면, 자동 포맷팅을 위해 아래 설정을 적용하세요.
+> ✨ prettier를 사용하는 규칙을 사용한다면, 자동 포맷팅을 위해 [@seungwoo321/prettier-config](../prettier-config/)를 참고하세요.  
 
 ```jsonc
 // .vscode/settings.json

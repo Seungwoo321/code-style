@@ -19,13 +19,19 @@ eslint 플러그인은 `base`, `stylistic`와 두개를 모두 포함하는 `rec
 
 > ✅ TypeScript ESLint는 [공식 문서](https://typescript-eslint.io/users/configs)를 참고하세요.
 
-사용 예시:
+### 설치
+
+```bash
+npm install -D eslint @seungwoo321/eslint-plugin-standard-js @seungwoo321/eslint-plugin-standard-jsx typescript-eslint
+```
+
+### 사용법
 
 ```js
 // eslint.config.js
 import { defineConfig } from 'eslint/config'
-import standardJs from '@seungwoo321/eslint-plugin-standard-js'
-import standardJsx from '@seungwoo321/eslint-plugin-standard-jsx'
+import standardjs from '@seungwoo321/eslint-plugin-standard-js'
+import standardjsx from '@seungwoo321/eslint-plugin-standard-jsx'
 import tseslint from 'typescript-eslint'
 
 export default defineConfig([
@@ -34,14 +40,18 @@ export default defineConfig([
     extends: [
       ...tseslint.configs.strict,
       ...tseslint.configs.stylistic,
-      ...standardJs.configs.recommended,
-      ...standardJsx.configs.recommended
+      ...standardjs.configs.recommended,
+      ...standardjsx.configs.recommended
     ]
   }
 ])
 ```
 
+## 사용 예시
 
+코드 스타일을 적용한 개발 템플릿을 별도 레포지토리로 제공합니다.
+
+- [vite-react-ts-standard](https://github.com/Seungwoo321/vite-react-ts-standard): Vite의 react-ts 템플릿 기반으로 Standard 코드 스타일 플러그인(@seungwoo321/code-style)을 적용한 템플릿입니다.
 
 <!-- 
 ## 템플릿

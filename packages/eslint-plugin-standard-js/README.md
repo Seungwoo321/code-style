@@ -35,17 +35,17 @@ export default defineConfig([
 ```js
 // eslint.config.js
 import { defineConfig } from 'eslint/config'
-import standard from '@seungwoo321/eslint-plugin-standard-js'
+import standardjs from '@seungwoo321/eslint-plugin-standard-js'
 
 export default defineConfig([
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,jsx,tsx}'],
     ignores: ['lib/**/*'],
     extends: [
-      ...standard.configs.recommended
+      ...standard.configs.standardjs
     ],
     rules: {
-      // 최대 라인 길이 제한
+      // ✅ 최대 라인 길이 제한
       '@stylistic/max-len': ['error', {
         code: 80,
         ignoreComments: true,
@@ -54,9 +54,9 @@ export default defineConfig([
         ignoreTemplateLiterals: true,
         ignoreRegExpLiterals: true
       }],
-      // 세미콜론 규칙 비활성화
+      // ✅ 세미콜론 규칙 비활성화
       '@stylistic/semi': 'off',
-      // 미사용 변수는 경고로만 표시
+      // ✅ 미사용 변수는 경고로만 표시
       'no-unused-vars': 'warn'
     }
   }
@@ -66,8 +66,8 @@ export default defineConfig([
 
 ## IDE 연동 (VSCode, Cursor)
 
-> prettier를 사용하는 규칙을 사용한다면, 자동 포맷팅을 위해 [@seungwoo321/prettier-config](../prettier-config/)를 참고하세요.  
-> stylistic가 포함된 규칙을 사용한다면, 자동 포맷팅을 위해 아래 설정을 적용하세요.
+> ✅ stylistic가 포함된 규칙을 사용한다면, 자동 포맷팅을 위해 아래 설정을 적용하세요.
+> ✨ prettier를 사용하는 규칙을 사용한다면, 자동 포맷팅을 위해 [@seungwoo321/prettier-config](../prettier-config/)를 참고하세요.  
 
 ```jsonc
 // .vscode/settings.json
@@ -98,3 +98,4 @@ export default defineConfig([
   "typescript.format.enable": false
 }
 ```
+
