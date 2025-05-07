@@ -1,3 +1,5 @@
+## [1.0.1](https://github.com/Seungwoo321/code-style/compare/@seungwoo321/prettier-config@1.0.0...@seungwoo321/prettier-config@1.0.1) (2025-05-07)
+
 # 1.0.0 (2025-05-07)
 
 
