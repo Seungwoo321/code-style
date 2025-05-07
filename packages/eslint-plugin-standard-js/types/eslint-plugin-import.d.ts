@@ -1,8 +1,6 @@
 declare module 'eslint-plugin-import' {
   import { Linter } from 'eslint'
-  export const rules: {
-    [ruleName: string]: Linter.RuleModule;
-  }
+  export const rules: Record<string, Linter.RuleModule>
 
   export const configs: {
     recommended: Linter.Config;

@@ -27,7 +27,8 @@ const config: TSESLint.FlatConfig.Config = {
       { enforceForClassMembers: true }
     ],
     '@stylistic/curly-newline': ['error', {
-      multiline: true
+      multiline: true,
+      consistent: true
     }],
     '@stylistic/dot-location': ['error', 'property'],
     '@stylistic/eol-last': 'error',
