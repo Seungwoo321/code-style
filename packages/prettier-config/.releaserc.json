@@ -40,13 +40,16 @@
       "@semantic-release/npm",
       {
         "npmPublish": true,
-        "pkgRoot": "packages/eslint-plugin-standard-js"
+        "pkgRoot": "packages/prettier-config"
       }
     ],
     [
       "@semantic-release/git",
       {
-        "assets": ["package.json", "CHANGELOG.md"],
+        "assets": [
+          "packages/prettier-config/package.json",
+          "packages/prettier-config/CHANGELOG.md"
+        ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
