@@ -1,6 +1,6 @@
 {
   "name": "@seungwoo321/eslint-plugin-standard-jsx",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "type": "module",
   "publishConfig": {
     "access": "public"
