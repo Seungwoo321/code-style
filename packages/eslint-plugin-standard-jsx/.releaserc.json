@@ -1,32 +1,49 @@
 {
-  "extends": "semantic-release-monorepo",
   "branches": ["main"],
+  "tagFormat": "@seungwoo321/eslint-plugin-standard-jsx@${version}",
   "plugins": [
     ["@semantic-release/commit-analyzer", {
       "preset": "angular",
+      "parserOpts": {
+        "headerPattern": "^(\\w*)\\(([\\w\\-]+)\\):\\s(.*)$",
+        "headerCorrespondence": ["type", "scope", "subject"]
+      },
       "releaseRules": [
         {"type": "feat", "scope": "eslint-plugin-standard-jsx", "release": "minor"},
         {"type": "fix", "scope": "eslint-plugin-standard-jsx", "release": "patch"},
-        {"release": false}
+        {"type": "docs", "scope": "eslint-plugin-standard-jsx", "release": "patch"},
+        {"type": "style", "scope": "eslint-plugin-standard-jsx", "release": "patch"},
+        {"type": "refactor", "scope": "eslint-plugin-standard-jsx", "release": "patch"},
+        {"type": "perf", "scope": "eslint-plugin-standard-jsx", "release": "patch"},
+        {"type": "test", "scope": "eslint-plugin-standard-jsx", "release": "patch"},
+        {"type": "build", "scope": "eslint-plugin-standard-jsx", "release": "patch"},
+        {"type": "ci", "scope": "eslint-plugin-standard-jsx", "release": "patch"},
+        {"type": "chore", "scope": "eslint-plugin-standard-jsx", "release": "patch"}
       ]
     }],
     ["@semantic-release/release-notes-generator", {
       "preset": "angular",
       "parserOpts": {
-        "headerPattern": "^(\\w*)(?:\\((eslint-plugin-standard-jsx)\\))?: (.*)$"
+        "headerPattern": "^(\\w*)\\(([\\w\\-]+)\\):\\s(.*)$",
+        "headerCorrespondence": ["type", "scope", "subject"]
+      },
+      "writerOpts": {
+        "commitsSort": ["scope", "subject"]
       }
     }],
     ["@semantic-release/changelog", {
       "changelogFile": "CHANGELOG.md"
     }],
     ["@semantic-release/npm", {
-      "npmPublish": true,
-      "pkgRoot": "packages/eslint-plugin-standard-jsx"
+      "pkgRoot": "."
     }],
     ["@semantic-release/git", {
-      "assets": ["packages/eslint-plugin-standard-jsx/package.json", "packages/eslint-plugin-standard-jsx/CHANGELOG.md"],
+      "assets": ["package.json", "CHANGELOG.md"],
       "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
     }],
-    "@semantic-release/github"
+    ["@semantic-release/github", {
+      "successComment": "🎉 이 PR은 [${nextRelease.version}](https://github.com/Seungwoo321/code-style/releases/tag/@seungwoo321/eslint-plugin-standard-jsx@${nextRelease.version})에 포함되었습니다.",
+      "failTitle": "semantic-release 실패"
+    }]
   ]
 }

@@ -46,4 +46,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           cd packages/eslint-plugin-standard-jsx
-          npx semantic-release -e semantic-release-monorepo
+          pnpm dlx semantic-release
