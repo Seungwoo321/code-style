@@ -4,6 +4,10 @@
   "plugins": [
     ["@semantic-release/commit-analyzer", {
       "preset": "angular",
+      "parserOpts": {
+        "headerPattern": "^(\\w*)\\(([\\w\\-]+)\\):\\s(.*)$",
+        "headerCorrespondence": ["type", "scope", "subject"]
+      },
       "releaseRules": [
         {"type": "feat", "scope": "eslint-plugin-standard-js", "release": "minor"},
         {"type": "fix", "scope": "eslint-plugin-standard-js", "release": "patch"},
@@ -14,19 +18,14 @@
         {"type": "test", "scope": "eslint-plugin-standard-js", "release": "patch"},
         {"type": "build", "scope": "eslint-plugin-standard-js", "release": "patch"},
         {"type": "ci", "scope": "eslint-plugin-standard-js", "release": "patch"},
-        {"type": "chore", "scope": "eslint-plugin-standard-js", "release": "patch"},
-        {"scope": "eslint-plugin-standard-js", "release": "patch"},
-        {"release": false}
-      ],
-      "parserOpts": {
-        "headerPattern": "^(\\w*)\\(([\\w-]*)\\):\\s*(.*)$",
-        "headerCorrespondence": ["type", "scope", "subject"]
-      }
+        {"type": "chore", "scope": "eslint-plugin-standard-js", "release": "patch"}
+      ]
     }],
     ["@semantic-release/release-notes-generator", {
       "preset": "angular",
       "parserOpts": {
-        "headerPattern": "^(\\w*)(?:\\(([\\w\\-\\.\\s]*)\\))?: (.*)$"
+        "headerPattern": "^(\\w*)\\(([\\w\\-]+)\\):\\s(.*)$",
+        "headerCorrespondence": ["type", "scope", "subject"]
       },
       "writerOpts": {
         "commitsSort": ["scope", "subject"]
