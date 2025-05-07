@@ -51,7 +51,8 @@ export default defineConfig([
 
 코드 스타일을 적용한 개발 템플릿을 별도 레포지토리로 제공합니다.
 
-- [vite-react-ts-standard](https://github.com/Seungwoo321/vite-react-ts-standard): Vite의 react-ts 템플릿 기반으로 Standard 코드 스타일 플러그인(@seungwoo321/code-style)을 적용한 템플릿입니다.
+- [vite-react-ts-standard](https://github.com/Seungwoo321/vite-react-ts-standard): Vite의 react-ts 템플릿에서 Standard 코드 스타일 플러그인(@seungwoo321/code-style)을 적용한 템플릿입니다.
+- [vite-vue2-ts-standard](https://github.com/Seungwoo321/vite-vue2-ts-standard): Vite의 vue-ts 템플릿에서 Vue를 2.7.16으로 다운그레이드 하고 Standard 코드 스타일 플러그인(@seungwoo321/code-style)을 적용한 템플릿입니다.
 
 ### TODO
 
@@ -60,7 +61,7 @@ export default defineConfig([
 - [vite-vue2-standard](https://github.com/Seungwoo321/vite-vue2-standard)
 - [vite-vue3-standard](https://github.com/Seungwoo321/vite-vue3-standard)
 - [vite-ts-standard](https://github.com/Seungwoo321/vite-ts-standard)
-- [vite-vue2-ts-standard](https://github.com/Seungwoo321/vite-vue2-ts-standard)
+
 - [vite-vue3-ts-standard](https://github.com/Seungwoo321/vite-vue3-ts-standard)
 
 <!-- 
