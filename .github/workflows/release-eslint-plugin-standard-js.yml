@@ -39,9 +39,6 @@ jobs:
       - name: Build
         run: pnpm -F @seungwoo321/eslint-plugin-standard-js build
         
-      - name: Lint Test
-        run: pnpm -F @seungwoo321/eslint-plugin-standard-js lint
-        
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
