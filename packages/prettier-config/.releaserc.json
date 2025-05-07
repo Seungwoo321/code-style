@@ -1,11 +1,15 @@
 {
-  "extends": "semantic-release-monorepo",
   "branches": ["main"],
+  "tagFormat": "@seungwoo321/prettier-config@${version}",
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
       {
         "preset": "angular",
+        "parserOpts": {
+          "headerPattern": "^(\\w*)\\(([\\w\\-]+)\\):\\s(.*)$",
+          "headerCorrespondence": ["type", "scope", "subject"]
+        },
         "releaseRules": [
           {
             "type": "feat",
@@ -17,7 +21,46 @@
             "scope": "prettier-config",
             "release": "patch"
           },
-          { "release": false }
+          {
+            "type": "docs",
+            "scope": "prettier-config",
+            "release": "patch"
+          },
+          {
+            "type": "style",
+            "scope": "prettier-config",
+            "release": "patch"
+          },
+          {
+            "type": "refactor",
+            "scope": "prettier-config",
+            "release": "patch"
+          },
+          {
+            "type": "perf",
+            "scope": "prettier-config",
+            "release": "patch"
+          },
+          {
+            "type": "test",
+            "scope": "prettier-config",
+            "release": "patch"
+          },
+          {
+            "type": "build",
+            "scope": "prettier-config",
+            "release": "patch"
+          },
+          {
+            "type": "ci",
+            "scope": "prettier-config",
+            "release": "patch"
+          },
+          {
+            "type": "chore",
+            "scope": "prettier-config",
+            "release": "patch"
+          }
         ]
       }
     ],
@@ -26,7 +69,11 @@
       {
         "preset": "angular",
         "parserOpts": {
-          "headerPattern": "^(\\w*)(?:\\((prettier-config)\\))?: (.*)$"
+          "headerPattern": "^(\\w*)\\(([\\w\\-]+)\\):\\s(.*)$",
+          "headerCorrespondence": ["type", "scope", "subject"]
+        },
+        "writerOpts": {
+          "commitsSort": ["scope", "subject"]
         }
       }
     ],
@@ -39,20 +86,22 @@
     [
       "@semantic-release/npm",
       {
-        "npmPublish": true,
-        "pkgRoot": "packages/prettier-config"
+        "pkgRoot": "."
       }
     ],
     [
       "@semantic-release/git",
       {
-        "assets": [
-          "packages/prettier-config/package.json",
-          "packages/prettier-config/CHANGELOG.md"
-        ],
+        "assets": ["package.json", "CHANGELOG.md"],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
-    "@semantic-release/github"
+    [
+      "@semantic-release/github",
+      {
+        "successComment": "🎉 이 PR은 [${nextRelease.version}](https://github.com/Seungwoo321/code-style/releases/tag/@seungwoo321/prettier-config@${nextRelease.version})에 포함되었습니다.",
+        "failTitle": "semantic-release 실패"
+      }
+    ]
   ]
 }
