@@ -20,7 +20,8 @@
       "changelogFile": "CHANGELOG.md"
     }],
     ["@semantic-release/npm", {
-      "npmPublish": true
+      "npmPublish": true,
+      "pkgRoot": "packages/eslint-plugin-standard-js"
     }],
     ["@semantic-release/git", {
       "assets": ["package.json", "CHANGELOG.md"],
