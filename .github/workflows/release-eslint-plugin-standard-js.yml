@@ -39,6 +39,9 @@ jobs:
       - name: Build
         run: pnpm -F @seungwoo321/eslint-plugin-standard-js build
         
+      - name: Lint Test
+        run: pnpm -F @seungwoo321/eslint-plugin-standard-js lint
+        
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -46,4 +49,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           cd packages/eslint-plugin-standard-js
-          npx semantic-release -e semantic-release-monorepo
+          pnpm dlx semantic-release

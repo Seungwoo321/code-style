@@ -1,5 +1,4 @@
 {
-  "extends": "semantic-release-monorepo",
   "branches": ["main"],
   "plugins": [
     ["@semantic-release/commit-analyzer", {
@@ -20,11 +19,10 @@
       "changelogFile": "CHANGELOG.md"
     }],
     ["@semantic-release/npm", {
-      "npmPublish": true,
-      "pkgRoot": "packages/eslint-plugin-standard-js"
+      "npmPublish": true
     }],
     ["@semantic-release/git", {
-      "assets": ["packages/eslint-plugin-standard-js/package.json", "packages/eslint-plugin-standard-js/CHANGELOG.md"],
+      "assets": ["package.json", "CHANGELOG.md"],
       "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
     }],
     "@semantic-release/github"

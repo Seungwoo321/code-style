@@ -1,5 +1,6 @@
-import stylistic from '@stylistic/eslint-plugin'
 import { TSESLint } from '@typescript-eslint/utils'
+import stylistic from '@stylistic/eslint-plugin'
+
 const config: TSESLint.FlatConfig.Config = {
   plugins: {
     '@stylistic': stylistic
