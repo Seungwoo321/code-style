@@ -54,15 +54,14 @@ export default defineConfig([
 - [vite-react-ts-standard](https://github.com/Seungwoo321/vite-react-ts-standard): Vite의 react-ts 템플릿에서 Standard 코드 스타일 플러그인을 적용한 템플릿입니다.
 - [vite-vue2-ts-standard](https://github.com/Seungwoo321/vite-vue2-ts-standard): Vite의 vue-ts 템플릿에서 Vue를 2.7.16 버전으로 다운그레이드 하고 Standard 코드 스타일 플러그인을 적용한 템플릿입니다.
 - [vite-vue3-ts-standard](https://github.com/Seungwoo321/vite-vue3-ts-standard): Vite의 vue-ts 템플릿에서 Vue를 3 버전으로 유지하고 Standard 코드 스타일 플러그인을 적용한 템플릿입니다.
+- [vite-react-js-standard](https://github.com/Seungwoo321/vite-react-js-standard): Vite의 react 테플릿에서 Standard 코드 스타일 플러그인을 적용한 템플릿입니다.
+- [vite-vue2-standard](https://github.com/Seungwoo321/vite-vue2-standard)
 
 ### TODO
-
 - [vite-js-standard](https://github.com/Seungwoo321/vite-js-standard)
-- [vite-react-js-standard](https://github.com/Seungwoo321/vite-react-js-standard)
-- [vite-vue2-standard](https://github.com/Seungwoo321/vite-vue2-standard)
+
 - [vite-vue3-standard](https://github.com/Seungwoo321/vite-vue3-standard)
 - [vite-ts-standard](https://github.com/Seungwoo321/vite-ts-standard)
-
 
 <!-- 
 - Next 템플릿
